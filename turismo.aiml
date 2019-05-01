@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- category  -->
+	<!-- pattern  -->
+	<!-- template  -->
+	<!-- think  -->
+	<!-- set  -->
+	<!-- star  -->
+	<!-- formal  -->
+	<!-- button  -->
+	<!-- text  -->
+	<!-- url  -->
+
+<category>
+<pattern>INFORMACIÓN DE *</pattern>
+<template>
+<think><set name="lugar"><star/></set></think>
+Aquí tiene algo de información sobre <formal><star/></formal> en la wikipedia.
+<button>
+<text>Acceder</text>
+<url>https://es.wikipedia.org/wiki/<star/></url>
+ </button>
+</template>
+</category>
+
+<category>
+<pattern>VER UN MAPA DE *</pattern>
+<template>
+<think><set name="lugar"><star/></set></think>
+Aquí tiene un mapa de <formal><star/></formal>.
+<button>
+<text>Acceder</text>
+<url>https://www.google.es/maps?q=<star/></url>
+</button>
+</template>
+</category> 	
+
+<category>
+<pattern>QUE TIEMPO HACE EN *</pattern>
+<template>
+<think><set name="lugar"><star/></set></think>
+Le deseo que haga un buen tiempo en <formal><star/></formal>.
+<button>
+<text>Ver la prevision del tiempo</text>
+<url>https://es.weather-forecast.com/locations/<star/>/forecasts/latest</url>
+</button>
+</template>
+</category> 
+
+	<!-- condition -->
+	<!-- li  -->
+
+<category>
+<pattern>INFORMACIÓN</pattern>
+<template>
+<condition name="lugar">
+<li value="*"><srai>Información de <get name="lugar"/></srai>.</li>
+<li>De donde deseas obtener información?</li>
+</condition>
+</template>
+</category> 
+
+<category>
+<pattern>UN MAPA</pattern>
+<template>
+<condition name="lugar">
+<li value="*"><srai>Ver un mapa de <get name="lugar"/></srai></li>
+<li>Que mapa desea ver?</li>
+</condition>
+</template>
+</category>
+
+<category>
+<pattern>Que tiempo hace</pattern>
+<template>
+<condition name="lugar">
+<li value="*"><srai>Que tiempo hace en <get name="lugar"/></srai></li>
+<li>De que lugar desea conocer el tiempo?</li>
+ </condition>
+</template>
+</category>
+
+	<!-- that -->
+
+<category>
+<pattern>*</pattern>
+<that>De donde deseas obtener información</that>
+<template>	
+<srai>Información de <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>Que mapa desea ver</that>
+<template>	
+<srai>Ver un mapa de <star/></srai>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>De que lugar desea conocer el tiempo</that>
+<template>	
+<srai>Que tiempo hace en <star/></srai>
+</template>
+</category>
+
+</aiml>
