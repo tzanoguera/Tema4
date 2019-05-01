@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- Respuesta única -->
+
+<category>
+    <pattern>HOLA</pattern>
+    <template>
+        <random>
+                <li>Hola.</li>
+                <li>Saludos.</li>
+                <li>Buenas.</li>
+        </random>
+    </template>
+</category>
+
+<category><pattern>Que dia es hoy</pattern>
+<template>Hoy es <date format="%d"/> de <date locale="es_ES" format="%B"/> del <date format="%Y"/> y 
+ podemos charlar un poco de las capas de los caballos.</template>
+</category>
+
+<category><pattern>CAPAS DE CABALLOS</pattern>
+<template>
+Al referirnos a las capas de un caballo estamos hablando de los colores del pelaje del animal.
+ </template>
+</category>
+
+<!-- Crear una lista de respuestas aleatorias -->
+
+<category><pattern>CURIOSIDADES</pattern>
+<template>
+<random>  
+  <li>Los caballos pueden vivir 25 años promedio.</li>
+  <li>El caballo tiene un gran ángulo de visión.</li>
+  <li>Los caballos tienen costumbres y necesidades muy distintas a las nuestras.</li>
+  <li>El caballo es capaz de correr a pocas horas de nacer.</li>
+  <li>El primer caballo era tan pequeño como un zorro.</li>
+  <li>Los arcos utilizados en los instrumentos de cuerda se hacen a menudo del pelo de la cola de los caballos.</li>
+  <li>Un caballo y un carruaje se clasifican en la misma categoría que un carro, mientras que montar a caballo es lo mismo que andar en bicicleta.</li>
+  <li>En la isla griega de Hydra, los caballos y ponis son el único medio legal para el transporte.</li>
+  <li>La hipoterapia es el uso de caballos y de los paseos a caballo para terapia física, ocupacional, del habla y psicológica.</li>
+  <li>Hipofobia y equinofobia se refieren al temor hacia los caballos.</li>
+  <li>Hipócrates se traduce como maestro de caballos.</li>
+  <li>El cerebro de un caballo adulto pesa aproximadamente la mitad de un humano.</li>
+  <li>Los caballos no pueden vomitar.</li>
+  <li>Los caballos gustan de comer alimentos de sabor dulce y por lo general van a rechazar algo agrio o amargo.</li>
+  <li>Al igual que una huella digital, cada cebra tiene un patrón de rayas único.</li>
+  <li>Para obtener una medición oficial de la altura de un caballo, debe medírsele sin herraduras.</li>
+  <li>Los caballos beben por lo menos 25 litros de agua al día (puede ser más en climas cálidos).</li>
+  <li>Los dientes de los caballos nunca dejan de crecer.</li>
+  <li>Un casco de caballo tarda entre 9 y 12 meses para volver a crecer completamente.</li>
+  <li>Los caballos han sido encontrados en pinturas rupestres que datan de alrededor de 15000 AC.</li>
+  <li>Puedes saber si un caballo tiene frío tocando detrás de sus orejas. Si esta zona está fría, así se siente el caballo.</li>
+  <li>Los caballos tienen 16 músculos en cada oreja, lo que les permite girar las orejas 180 grados.</li>
+  <li>Los ponis pueden vivir más que el resto de los caballos.</li>
+  <li>La unión de la rodilla de un caballo es el equivalente a una muñeca humana.</li>
+  <li>El período de gestación de una yegua es de 11 meses, pero el de una burra es de 12 meses.</li>
+  <li>Los caballos con la piel rosada pueden sufrir quemaduras de sol.</li>
+  <li>Un pequeño guión en la piel de un caballo (generalmente en el cuello o los hombros) se denomina marca de un profeta y se considera señal de buena suerte.</li>
+  <li>Las tribus mongoles fueron las primeras en domesticar a los caballos, hace unos 5000 años.</li>
+  <li>Los caballos tienen una gran memoria a largo plazo, especialmente para los lugares en los que han estado asustados).</li>
+  <li>El caballo más antiguo que se ha registrado vivió hasta la edad de 62 años, murió en 1822.</li>
+  <li>Los caballos árabes tienen una vértebra menos y una costilla menos que otras razas.</li>
+  <li>Mientras galopan, los caballos respiran a cada paso.</li>
+  <li>Los caballos lloran la muerte de un compañero.</li>
+  <li>Todos los caballos tienen parásitos en el estómago y los intestinos en pequeñas cantidades, sólo se convierten en un problema si se acumulan grandes cantidades.</li>
+</random>
+</template>
+</category>
+
+<!-- Las Capas -->
+
+<category><pattern>CUANTAS HAY</pattern>
+<template>Encontraremos tres grandes grupos.
+<ul>
+<li>Capas básicas.</li>
+<li>Capas diluidas.</li>
+<li>Capas del patrón blanco.</li>
+</ul>
+ </template>
+</category>
+
+<!-- Capas del grupo Básico -->
+
+<category><pattern>CAPAS BÁSICAS</pattern>
+<template>
+<ul>
+<li>Alazana</li>
+<li>Castaña</li>
+<li>Negra</li>
+</ul>
+</template>
+</category>
+
+<category><pattern>ALAZANA</pattern>
+<template>
+
+<b>Capa Alazan.</b>
+Cavall amb capa Alazan.<br/>
+El Alazán seu crin i cos de to marró clar o vermellós, com pèl-roig.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+</template>
+</category>
+ 
+<category><pattern>CASTAÑA</pattern>
+<template>
+Capa Castaño
+Cavall amb capa Castaño.
+El Castaño, mulat o zaino: marró fosc, de vegades gairebé negre; crinera i cua brunes o negres.
+<ol/><b>Sabias que:</b> <srai>CURIOSIDADES</srai><br/>
+</template>
+</category>
+
+<category><pattern>NEGRA</pattern>
+<template>
+ Capa Negre
+ Cavall amb capa Negre.
+El Negre ha de tenir capa de color negre. S'admeten zones blanques a peus i cap.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+
+</template>
+</category>
+
+<!-- Capas del grupo Diluidas -->
+
+<category><pattern>CAPAS DILUIDAS</pattern>
+<template>
+<ul>
+<li>Baya</li>
+<li>Palomina o Isabela</li>
+<li>Cremella</li>
+<li>Ratonera</li>
+<li>Cervuna</li>
+<li>Lobera</li>
+</ul>
+</template>
+</category>
+
+<category><pattern>BAYA</pattern>
+<template>
+Capa Bayo
+Cavall amb capa Bayo.
+Bayo és la capa blanc groguenc.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+</template>
+</category>
+
+<category><pattern>PALOMINA</pattern>
+<template>
+  Capa palomino.
+  El palomino és de color ocre daurat amb les crineres i cua de color blanc argent, característica de les races americanes.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+  </template>
+</category> 
+ 
+<category><pattern>CREMELLA</pattern>
+<template>
+  Capa palomino.
+  El palomino és de color ocre daurat amb les crineres i cua de color blanc argent, característica de les races americanes.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+  </template>
+</category> 
+ 
+<category><pattern>RATONERA</pattern>
+<template>
+  Capa palomino.
+  El palomino és de color ocre daurat amb les crineres i cua de color blanc argent, característica de les races americanes.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+  </template>
+</category>
+
+<category><pattern>CERVUNA</pattern>
+<template>
+  Capa palomino.
+  El palomino és de color ocre daurat amb les crineres i cua de color blanc argent, característica de les races americanes.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+  </template>
+</category> 
+
+<category><pattern>LOBERA</pattern>
+<template>
+  Capa palomino.
+  El palomino és de color ocre daurat amb les crineres i cua de color blanc argent, característica de les races americanes.
+  </template>
+</category> 
+
+<!-- Capas del grupo Patron Blanco -->
+
+<category><pattern>CAPAS DEL PATRON BLANCO </pattern>
+<template>
+<ul>
+<li>Blanca</li>
+<li>Torda</li>
+<li>Ruana</li>
+<li>Overa</li>
+<li>Sabina</li>
+<li>Pia</li>
+<li>Tobiano</li>
+<li>Apaloosa</li>
+</ul>
+</template>
+</category>
+
+<category><pattern>BLANCA</pattern>
+<template>
+  Capa tord
+Cavall amb capa Tordo.
+Tord la capa no és completament blanque, sinó una barreja de pèls blancs, grisos i negres.
+   Depenent dels tons foscos i la seva distribució, hi ha diferents tipus.
+   Neix negre o d'una altra capa i va aclarint amb el temps fins a tornar-blanc.
+   Sota el pèl blanc es pot apreciar que la pell és negra.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+</template>
+</category>
+
+<category><pattern>TORDA</pattern>
+<template>
+  Capa tord
+Cavall amb capa Tordo.
+Tord la capa no és completament blanque, sinó una barreja de pèls blancs, grisos i negres.
+   Depenent dels tons foscos i la seva distribució, hi ha diferents tipus.
+   Neix negre o d'una altra capa i va aclarint amb el temps fins a tornar-blanc.
+   Sota el pèl blanc es pot apreciar que la pell és negra.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+</template>
+</category>
+
+<category><pattern>RUANA</pattern>
+<template>
+  Capa tord
+Cavall amb capa Tordo.
+Tord la capa no és completament blanque, sinó una barreja de pèls blancs, grisos i negres.
+   Depenent dels tons foscos i la seva distribució, hi ha diferents tipus.
+   Neix negre o d'una altra capa i va aclarint amb el temps fins a tornar-blanc.
+   Sota el pèl blanc es pot apreciar que la pell és negra.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+</template>
+</category>
+
+<category><pattern>OVERA</pattern>
+<template>
+  Capa tord
+Cavall amb capa Tordo.
+Tord la capa no és completament blanque, sinó una barreja de pèls blancs, grisos i negres.
+   Depenent dels tons foscos i la seva distribució, hi ha diferents tipus.
+   Neix negre o d'una altra capa i va aclarint amb el temps fins a tornar-blanc.
+   Sota el pèl blanc es pot apreciar que la pell és negra.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+</template>
+</category>
+
+<category><pattern>SABINA</pattern>
+<template>
+  Capa tord
+Cavall amb capa Tordo.
+Tord la capa no és completament blanque, sinó una barreja de pèls blancs, grisos i negres.
+   Depenent dels tons foscos i la seva distribució, hi ha diferents tipus.
+   Neix negre o d'una altra capa i va aclarint amb el temps fins a tornar-blanc.
+   Sota el pèl blanc es pot apreciar que la pell és negra.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+</template>
+</category>
+
+<category><pattern>PIA</pattern>
+<template>
+Capa pio
+Cavall amb capa pioEl Pío, la capa de dos colors, rarament 3, en forma de taques.
+
+ Blanc i negre (piu negre)
+ Blanc i vermell (piu alatzà)
+Existeixen nombrosos variants segons la mida i forma de les taques (overo, tobiano, apalusa, etc.).
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+</template>
+</category>
+
+<category><pattern>TOBIANO</pattern>
+<template>
+  Capa tord
+Cavall amb capa Tordo.
+Tord la capa no és completament blanque, sinó una barreja de pèls blancs, grisos i negres.
+   Depenent dels tons foscos i la seva distribució, hi ha diferents tipus.
+   Neix negre o d'una altra capa i va aclarint amb el temps fins a tornar-blanc.
+   Sota el pèl blanc es pot apreciar que la pell és negra.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+</template>
+</category>
+
+<category><pattern>APALOOSA</pattern>
+<template>
+  Capa tord
+Cavall amb capa Tordo.
+Tord la capa no és completament blanque, sinó una barreja de pèls blancs, grisos i negres.
+   Depenent dels tons foscos i la seva distribució, hi ha diferents tipus.
+   Neix negre o d'una altra capa i va aclarint amb el temps fins a tornar-blanc.
+   Sota el pèl blanc es pot apreciar que la pell és negra.
+<ol/><b>Sabias que:</b>Sabias que: <srai>CURIOSIDADES</srai><br/>
+</template>
+</category>
+
+<category>
+    <pattern>ADIOS</pattern>
+    <template>
+        <random>
+                <li>Hata pronto.</li>
+                <li>Nos vemos.</li>
+                <li>Adios, Que pases un buen dia.</li>
+                <li>Hasta la vista</li>
+        </random>
+    </template>
+</category>
+
+</aiml>
